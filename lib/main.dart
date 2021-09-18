@@ -99,7 +99,7 @@ class _MyHomePageState extends State<MyHomePage>
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(15, 131, 15, 0),
+                padding: const EdgeInsets.fromLTRB(10, 131, 10, 0),
                 child: Column(
                   children: [
                     Container(
@@ -259,7 +259,7 @@ class _MyHomePageState extends State<MyHomePage>
                                             Padding(
                                               padding:
                                                   const EdgeInsets.fromLTRB(
-                                                      0, 15, 0, 0),
+                                                      0, 15, 0, 15),
                                               child: Row(
                                                 mainAxisAlignment:
                                                     MainAxisAlignment.center,

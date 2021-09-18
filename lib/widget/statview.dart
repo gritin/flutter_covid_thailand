@@ -30,7 +30,7 @@ class statview extends StatelessWidget {
     return ListView(
       children: [
         Padding(
-          padding: EdgeInsets.fromLTRB(20, 10, 20, 0),
+          padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
           child: Column(
             children: [
               Container(
@@ -44,12 +44,14 @@ class statview extends StatelessWidget {
                 padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                 child: Row(
                   children: [
-                    Container(
-                      child: statbox(
-                          type: "recover",
-                          num: newRecover,
-                          num_2: totalRecover,
-                          is_province: false,),
+                    Expanded(
+                      child: Container(
+                        child: statbox(
+                            type: "recover",
+                            num: newRecover,
+                            num_2: totalRecover,
+                            is_province: false,),
+                      ),
                     ),
                     SizedBox(
                       width: 10,
@@ -67,7 +69,7 @@ class statview extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(0, 15, 0, 0),
+                padding: const EdgeInsets.fromLTRB(0, 15, 0, 15),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
